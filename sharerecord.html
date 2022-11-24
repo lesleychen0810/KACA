@@ -11,10 +11,11 @@
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="image/機智小專家logo5.png" type="">
         <!-- ===== Iconscout CSS ===== -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/map.css">
-        <!-- Include map.js, which defines our own functions -->
-        <script src="./js/map.js"  type="module"></script>
+        <link rel="stylesheet" href="./css/index.css">
+        <!-- Include index.js, which defines our own functions -->
+        <script src="./js/index.js" type="module"></script>
     </head>
 
     <body>
@@ -61,46 +62,53 @@
             </div>
         </nav>
 
+        <h3>關於Dr. kācā</h3>
+        <div class="container">
+            <div class="row">
+                <div class="text-center" style="font-size:30px;text-decoration-line: underline; margin-bottom: 40px;">
+                    共享紀錄
+                </div>
+            </div>
+            <div class="row" style="background-color: #D5D5D5;margin-bottom: 10px;">
+                <div style="display: flex;	justify-content: space-between;align-items: center; ">
+                    <div style="display: flex; align-items: center;">
+                        <img src="image/機智小專家logo2.png" class=" cad-imgs" style="width:80px;margin-right:20px">
+                    <div>Amy</div>
+                    </div>
+                    2022/06/05
+                </div>
+            </div>
+            <div class="row" style="background-color: #D5D5D5;margin-bottom: 10px;">
+                <div style="display: flex;	justify-content: space-between;align-items: center; ">
+                    <div style="display: flex; align-items: center;">
+                        <img src="image/機智小專家logo2.png" class=" cad-imgs" style="width:80px;margin-right:20px">
+                    <div>Amy</div>
+                    </div>
+                    2022/06/05
+                </div>
+            </div>
+            <div class="row" style="background-color: #D5D5D5;margin-bottom: 10px;">
+                <div style="display: flex;	justify-content: space-between;align-items: center; ">
+                    <div style="display: flex; align-items: center;">
+                        <img src="image/機智小專家logo2.png" class=" cad-imgs" style="width:80px;margin-right:20px">
+                    <div>Amy</div>
+                    </div>
+                    2022/06/05
+                </div>
+            </div>
+            <div class="row" style="background-color: #D5D5D5;margin-bottom: 10px;">
+                <div style="display: flex;	justify-content: space-between;align-items: center; ">
+                    <div style="display: flex; align-items: center;">
+                        <img src="image/機智小專家logo2.png" class=" cad-imgs" style="width:80px;margin-right:20px">
+                    <div>Amy</div>
+                    </div>
+                    2022/06/05
+                </div>
+            </div>
 
-        <div id="googleMap" style="height:100vh"></div>
-        <script>
-             function success(pos) {
-  const crd = pos.coords;
 
-  var mapProp= {
-              center:new google.maps.LatLng(crd.latitude,crd.longitude),
-              zoom:13,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            console.log('map',crd)
-
-            let mapMarker = [{ lat:24.9521923,lng:121.2400587},{ lat:24.9531213,lng:121.2299504},{ lat:24.9650857,lng:121.2282258},{ lat:24.9776752,lng:121.2682426} ]
-    
-        for(let i = 0;i < mapMarker.length;i++){
-            new google.maps.Marker({
-    position: mapMarker[i],
-    map,
-    title: "Hello World!",
-  });
-        }
-           
-
-}
-            
-function myMap(){
-            if (window.navigator.geolocation) {
- // Geolocation available
- let location = window.navigator.geolocation
-  .getCurrentPosition(success, console.log)
-
-} 
-}
-         
-
-           
-            </script>
-            
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZtdHg1xb3sR359s2tb1c8kaSDKztYvYs&callback=myMap"></script>
+            </div>
+        </div>
 
         <footer class="text-center text-lg-start">
             <!-- Copyright -->
